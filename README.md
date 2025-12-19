@@ -84,7 +84,7 @@ streamlit run demo_phd.py
 ```
 #### Evidence / Artifacts (Proof for CV Claims)
 runs/run-YYYYMMDD-HHMMSS-<mode>/
-
+```bash
 Inside you get:
     -config.json — full experimental configuration + environment versions
     -metrics_round.csv — per-round comm reduction, bytes sent, clients sent
@@ -92,7 +92,7 @@ Inside you get:
     -comm_reduction.png — communication efficiency plot
     -roc_auc.png, avg_precision.png — robustness plots
     -summary.json — headline metrics for quick reporting
-
+```
 ---
 #### Installation
 Multi-seed Evaluation (Paper-style, mean ± std)
