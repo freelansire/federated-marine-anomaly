@@ -1,4 +1,4 @@
-# 🤖 Federated Lightweight Anomaly Detection for Distributed Marine Sensor Nodes
+## 🤖 Federated Lightweight Anomaly Detection for Distributed Marine Sensor Nodes
 
 A **reproducible research-grade prototype** of federated anomaly detection across **heterogeneous, partially connected** marine sensor nodes (simulated “buoys”).  
 Built to serve as **evidence for PhD applications**: includes baselines/ablations, artifacts, and multi-seed mean±std evaluation.
@@ -8,31 +8,31 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 
 ---
 
-## ✅ Core Features 
+### ✅ Core Features 
 
-### Federated anomaly detection prototype
+#### Federated anomaly detection prototype
 - Distributed clients represent **marine sensor buoys**
 - Each client observes multivariate streams:
   - **temperature, turbidity, oxygen, salinity**
 - Anomaly score = **next-step prediction error** using a lightweight learner (**RoLA-Lite**)
 
-### RoLA-Lite local learner (lightweight online predictor)
+#### RoLA-Lite local learner (lightweight online predictor)
 - Windowed multivariate input → next-step multivariate prediction
 - “Online” via repeated local updates per federated round
 
-### Client-aware aggregation
+#### Client-aware aggregation
 - Server aggregates updates using **client-aware weights** (volume × quality proxy)
 - Simulates realistic settings where sensors differ in noise/drift/missingness
 
-### Communication efficiency (supports CV claims)
+#### Communication efficiency (supports CV claims)
 - **Top-k sparsification:** send only the largest-magnitude parameter updates
 - **Selective updates:** clients skip sending tiny updates
 - Logs per-round **communication reduction** vs dense FedAvg
 
-### Partial connectivity (realistic networking constraint)
+#### Partial connectivity (realistic networking constraint)
 - Only a subset of clients participate per round (configurable participation rate)
 
-### “PhD-proof” experiment design
+#### “PhD-proof” experiment design
 - **Baselines & Ablations**:
   - `centralized` (pooled training baseline)
   - `fedavg_dense` (FedAvg without compression)
@@ -44,7 +44,7 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 
 ---
 
-## Methods Summary (high-level)
+### Methods Summary (high-level)
 
 1. **Synthetic buoy data generation** produces heterogeneous sensor streams with:
    - seasonality, noise, gradual drift, missingness
@@ -60,7 +60,8 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 
 ---
 
-## Project Structure
+### Project Structure
+```bash
 federated-marine-anomaly/
 ├─ src/
 │ ├─ simulate_data.py # synthetic heterogeneous buoy data generator
@@ -72,16 +73,16 @@ federated-marine-anomaly/
 ├─ runs/ # auto-generated artifacts (ignored in git by default)
 ├─ requirements.txt
 └─ README.md
-
+```
 
 ---
-## Installation
+#### Installation
 ```bash
 pip install -r requirements.txt
 cd src
 streamlit run demo_phd.py
-
-## Evidence / Artifacts (Proof for CV Claims)
+```
+#### Evidence / Artifacts (Proof for CV Claims)
 runs/run-YYYYMMDD-HHMMSS-<mode>/
 
 Inside you get:
@@ -93,7 +94,7 @@ Inside you get:
     -summary.json — headline metrics for quick reporting
 
 ---
-## Installation
+#### Installation
 Multi-seed Evaluation (Paper-style, mean ± std)
 
 In the Streamlit sidebar:
@@ -101,12 +102,13 @@ In the Streamlit sidebar:
     -choose N seeds
     -click Run multi-seed (mean ± std)
 
-## How to Cite
+#### How to Cite
+```bash
 @misc{orokpo_federatedmarineanomaly,
   title = {Federated Lightweight Anomaly Detection for Distributed Marine Sensor Nodes},
   author = {Moses, Samuel},
   year = {2025},
   howpublished = {GitHub repository},
 }
-
+```
 
