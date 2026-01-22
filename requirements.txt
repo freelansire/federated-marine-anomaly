@@ -1,8 +1,12 @@
+streamlit>=1.30,<2
+protobuf<6
+
 numpy
 pandas
 matplotlib
-scikit-learn
-tqdm
-torch
-streamlit
 pyyaml
+tqdm
+
+scikit-learn>=1.6,<2
+torch>=2.7,<3
+
