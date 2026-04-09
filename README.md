@@ -102,13 +102,3 @@ In the Streamlit sidebar:
     -choose N seeds
     -click Run multi-seed (mean ± std)
 
-#### How to Cite
-```bash
-@misc{orokpo_federatedmarineanomaly,
-  title = {Federated Lightweight Anomaly Detection for Distributed Marine Sensor Nodes},
-  author = {Moses, Samuel},
-  year = {2025},
-  howpublished = {GitHub repository},
-}
-```
-
