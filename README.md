@@ -32,7 +32,7 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 #### Partial connectivity (realistic networking constraint)
 - Only a subset of clients participate per round (configurable participation rate)
 
-#### “PhD-proof” experiment design
+#### “PhD-proof” experiment designs
 - **Baselines & Ablations**:
   - `centralized` (pooled training baseline)
   - `fedavg_dense` (FedAvg without compression)
