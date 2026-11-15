@@ -4,7 +4,8 @@ A **reproducible research-grade prototype** of federated anomaly detection acros
 Built to serve as **evidence for PhD applications**: includes baselines/ablations, artifacts, and multi-seed mean±std evaluation.
 
 > **What this is:** A simulation-based experimental framework showing *federated online learners + communication-efficient updates + robustness under heterogeneity & partial participation*.  
-> **What this is not:** A production “secure aggregation” implementation. The masking code is a *toy demonstration* of the concept.
+> **What this is not:** A production “secure aggregation” implementation. The masking code is a *toy demonstration* of the concepts.
+
 
 ---
 
