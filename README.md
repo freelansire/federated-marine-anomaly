@@ -1,3 +1,5 @@
+
+
 ## 🤖 Federated Lightweight Anomaly Detection for Distributed Marine Sensor Nodes
 
 A **reproducible research-grade prototype** of federated anomaly detection across **heterogeneous, partially connected** marine sensor nodes (simulated “buoys”).  
@@ -5,7 +7,6 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 
 > **What this is:** A simulation-based experimental framework showing *federated online learners + communication-efficient updates + robustness under heterogeneity & partial participation*.  
 > **What this is not:** A production “secure aggregation” implementation. The masking code is a *toy demonstration* of the concepts.
-
 
 ---
 
@@ -27,8 +28,8 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 
 #### Communication efficiency (supports CV claims)
 - **Top-k sparsification:** send only the largest-magnitude parameter updates
-- **Selective updates:** clients skip sending tiny updates
-- Logs per-round **communication reduction** vs dense FedAvg
+- **Selective updates:** clients skip sending tiny updates.
+- Logs per-round **communication reduction** vs dense FedAvg.
 
 #### Partial connectivity (realistic networking constraint)
 - Only a subset of clients participate per round (configurable participation rate)
