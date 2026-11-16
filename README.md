@@ -91,8 +91,8 @@ Inside you get:
     -metrics_round.csv — per-round comm reduction, bytes sent, clients sent
     -metrics_clients.csv — per-client ROC-AUC/AP (robustness under heterogeneity)
     -comm_reduction.png — communication efficiency plot
-    -roc_auc.png, avg_precision.png — robustness plots
-    -summary.json — headline metrics for quick reporting
+    -roc_auc.png, avg_precision.png — robustness plots.
+    -summary.json — headline metrics for quick reporting.
 ```
 ---
 #### Installation
