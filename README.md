@@ -1,5 +1,4 @@
 
-
 ## 🤖 Federated Lightweight Anomaly Detection for Distributed Marine Sensor Nodes
 
 A **reproducible research-grade prototype** of federated anomaly detection across **heterogeneous, partially connected** marine sensor nodes (simulated “buoys”).  
@@ -19,12 +18,12 @@ Built to serve as **evidence for PhD applications**: includes baselines/ablation
 - Anomaly score = **next-step prediction error** using a lightweight learner (**RoLA-Lite**)
 
 #### RoLA-Lite local learner (lightweight online predictor)
-- Windowed multivariate input → next-step multivariate prediction
-- “Online” via repeated local updates per federated round
+- Windowed multivariate input → next-step multivariate prediction.
+- “Online” via repeated local updates per federated round.
 
 #### Client-aware aggregation
 - Server aggregates updates using **client-aware weights** (volume × quality proxy)
-- Simulates realistic settings where sensors differ in noise/drift/missingness
+- Simulates realistic settings where sensors differ in noise/drift/missingness.
 
 #### Communication efficiency (supports CV claims)
 - **Top-k sparsification:** send only the largest-magnitude parameter updates
